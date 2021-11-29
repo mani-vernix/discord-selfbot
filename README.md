@@ -1,5 +1,5 @@
 # discord-self
-An Simple Discord Self Bot To Be Faster
+An Simple Discord Self Bot To Do Your Activities Faster Than Before
 
 *Created From [discord.js-self@12.0.4](https://www.npmjs.com/package/discord.js-self)*
 
@@ -16,3 +16,15 @@ git clone https://github.com/Mani-Vernix/discord-self.git
 cd self
 npm install
 ```
+
+
+
+**📚 Installation**
+
+First of you need to Download and Install [Node.js](https://nodejs.org/en/)
+
+Install the `npm install` modules in your terminal before using 
+
+Put `token` and `prefix` and `ownerid` in `config.json` file
+
+After installation open `run.bat` file and and wait for project to run 
