@@ -1,3 +1,3 @@
 # discord-self
 ```An Simple Discord Self Bot To Be Faster```
-user [discord.js-self](https://www.npmjs.com/package/discord.js-self)
+*Created From [discord.js-self@12.0.4](https://www.npmjs.com/package/discord.js-self)*
