@@ -3,7 +3,7 @@ const Discord = require('discord.js-self');
 const client = new Discord.Client();
 const config = require('./config.json');
 const prefix = (config.prefix);//put prefix in config.json
-const owner = (config.owner);//put your id in config.json
+const ownerid = (config.ownerid);//put your id in config.json
 //=================== READY ========================
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}! . Im Ready :)`);
@@ -15,7 +15,7 @@ client.on('message', message => {
     let status = messageArry[1]
 
     if (cmd == `${prefix}status`) {
-        if (message.author.id !== `${owner}`) return false;
+        if (message.author.id !== `${ownerid}`) return false;
         let statusText = message.content.replace(`${cmd} ${status}`, ``)
 
         if (status == "dnd" || status == "online" || status == "idle" || status == "invisible") {
@@ -29,7 +29,7 @@ client.on('message', message => {
 client.on('message', message => {
     let messageArry = message.content.split(" ")
 
-    if (message.author.id !== `${owner}`) return false;
+    if (message.author.id !== `${ownerid}`) return false;
     if (message.content.startsWith(`${prefix}afk`)) {
         client.user.setPresence({
             status: 'idle'
@@ -38,14 +38,14 @@ client.on('message', message => {
 });
 //============================= !info =============================
 client.on('message', message => {
-    if (message.author.id !== `${owner}`) return false;
+    if (message.author.id !== `${ownerid}`) return false;
     if (message.content.startsWith(`${prefix}info`)) {
         message.reply(`**Your Status Is :** \`${client.user.presence.status}\``)
     }
 });
 //======================= !join [VoiceChannel-id] =======================
 client.on("message", (message) => {
-    if (message.author.id !== `${owner}`) return false;
+    if (message.author.id !== `${ownerid}`) return false;
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const VC = message.content.slice(prefix.length).trim().split(' ');
     const command = VC.shift().toLowerCase();
