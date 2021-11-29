@@ -5,6 +5,14 @@ An Simple Discord Self Bot To Be Faster
 
 **🔧 Requirements**
 
- > `-` Discord Account Token [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
+ > `1` Discord Account Token [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
  > 
- > `-` Node.js v12.0.0 or newer
+ > `2` Node.js v12.0.0 or newer
+
+
+**🚀 Start**
+```
+git clone https://github.com/Mani-Vernix/discord-self.git
+cd self
+npm install
+```
